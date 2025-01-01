@@ -1,3 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("Hello, World!");
+namespace Duck;
+
+internal class MiniDuckSimulator
+{
+    public static void Main(string[] args)
+    {
+        Duck mallard = new MallardDuck();
+        mallard.PerformQuack();
+        mallard.PerformFly();
+    }
+}
