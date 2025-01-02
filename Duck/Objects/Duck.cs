@@ -1,6 +1,6 @@
 using Duck.Interface;
 
-namespace Duck;
+namespace Duck.Objects;
 
 public abstract class Duck
 {

@@ -1,7 +1,6 @@
-using Duck.Interface;
 using Duck.Interface.Implementation;
 
-namespace Duck;
+namespace Duck.Objects;
 
 public class MallardDuck: Duck
 {
