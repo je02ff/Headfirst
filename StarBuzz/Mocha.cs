@@ -7,12 +7,13 @@ public class Mocha: ICondimentDecorator
     public string Description
     {
         get => _beverage.Description + ", Mocha";
-        init { }
-}
+    }   
+
+    public string Size { get; }
 
     public double Cost()
     {
-        return _beverage.Cost() + 0.25;
+        return _beverage.Cost() + (_beverage.Size == "Small" ? 0.25 : 0.50);
     }
 
     public Mocha(IBeverage beverage)

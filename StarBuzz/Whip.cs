@@ -7,9 +7,9 @@ public class Whip: ICondimentDecorator
     public string Description
     {
         get => _beverage.Description + ", Whip";
-        init { }
     }
-
+    public string Size { get; }
+    
     public Whip(IBeverage beverage)
     {
         _beverage = beverage;

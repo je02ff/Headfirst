@@ -1,11 +1,12 @@
 namespace StarBuzz;
 
-public class Espresso: IBeverage
+public class Espresso(string size) : IBeverage
 {
-    public string Description { get; init; } = "Espresso"; 
-    
+    public string Description { get; init; } = "Espresso";
+    public string Size { get; } = size;
+
     public double Cost()
     {
-        return 1.99;
+        return Size == "Small" ? 1.00 : 2.00;
     }
 }
